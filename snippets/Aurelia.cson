@@ -1,0 +1,137 @@
+".source.js":
+  "Aurelia: canActivate() { ... }":
+    prefix: "_cat"
+    body: "canActivate() {\n\t${1}\n}${2}"
+
+  "Aurelia: activate() { ... }":
+    prefix: "_act"
+    body: "activate() {\n\t${1}\n}${2}"
+
+  "Aurelia: deactivate() { ... }":
+    prefix: "_dct"
+    body: "deactivate() {\n\t${1}\n}${2}"
+
+  "Aurelia: canDeactivate() { ... }":
+    prefix: "_cda"
+    body: "canDeactivate() {\n\t${1}\n}${2}"
+
+  "Aurelia: created(ov, mv) { ... }":
+    prefix: "_cre"
+    body: "created(owningView: View, myView: View) {\n\t${1}\n}${2}"
+
+  "Aurelia: bind(bc, oc) { ... }":
+    prefix: "_bin"
+    body: "bind(bindingContext: Object, overrideContext: Object) {\n\t${1}\n}${2}"
+
+  "Aurelia: attached() { ... }":
+    prefix: "_att"
+    body: "attached() {\n\t${1}\n}${2}"
+
+  "Aurelia: detached() { ... }":
+    prefix: "_det"
+    body: "detached() {\n\t${1}\n}${2}"
+
+  "Aurelia: unbind() { ... }":
+    prefix: "_unb"
+    body: "unbind() {\n\t${1}\n}${2}"
+
+  "Aurelia: use plugin":
+    prefix: "_aup"
+    body: "aurelia.use.plugin(${1})"
+
+  "Aurelia decorators: @syncChildren(pp, cH, sl)":
+    prefix: "_sc"
+    body: "@syncChildren(property, changeHandler, selector)"
+
+  "Aurelia decorators: @skipContentProcessing":
+    prefix: "_sp"
+    body: "@skipContentProcessing"
+
+  "Aurelia decorators: @useView(path)":
+    prefix: "_uv"
+    body: "@useView('${1}')"
+
+  "Aurelia decorators: @noView":
+    prefix: "_nv"
+    body: "@noView"
+
+  "Aurelia decorators: @inject":
+    prefix: "_ij"
+    body: "@inject('{$1}')"
+
+  "Aurelia decorators: @customAttribute":
+    prefix: "_ca"
+    body: "@customAttribute('{$1}')"
+
+  "Aurelia decorators: @bindable":
+    prefix: "_bd"
+    body: "@bindable('{$1}')"
+
+  "Aurelia: Logging":
+    prefix: '_log'
+    body: """
+      import {LogManager} from 'aurelia-framework';
+      import {ConsoleAppender} from 'aurelia-logging-console';
+
+      LogManager.addAppender(new ConsoleAppender());
+      LogManager.setLevel(LogManager.logLevel.debug);
+
+      export function configure(aurelia) {
+        aurelia.use
+          .standardConfiguration;
+
+        aurelia.start().then(() => aurelia.setRoot());
+      }
+    """
+
+  "Aurelia: configure":
+    prefix: '_cnf'
+    body: """
+      export function configure(aurelia) {
+        aurelia.use
+          .standardConfiguration()
+          .developmentLogging();
+
+        \n\t${1}
+      };
+    """
+
+  "Aurelia: configure globalResources":
+    prefix: '_cfg'
+    body: """
+      export function configure(aurelia) {
+        aurelia.use
+          .standardConfiguration()
+          .developmentLogging()
+          .globalResources('${1}');
+
+        aurelia.start().then(() => aurelia.setRoot());
+
+        \n\t${2}
+      };
+    """
+
+  "Aurelia: configureRouter() { ... }":
+    prefix: "_cfr"
+    body: """
+     configureRouter(config, router) {
+       config.title = '${1}';
+       config.map([
+        { route: ['','${2}'],  name: '${3}', moduleId: '${4}', nav: true, title:'${5}' },
+       ]);
+
+       this.router = router;
+     }
+    """
+  "Aurelia: class Skeleton":
+    prefix: "_clss"
+    body: """
+      'use strict';
+      import { ${1} }  from 'aurelia-framework';
+
+      export class ${2} {
+         constructor(){
+
+         }
+      }
+    """
