@@ -1,5 +1,5 @@
 {
-  "name": "atom-aurelia-snippets",
+  "name": "aurelia-snippets",
   "version": "1.0.0",
   "description": "Atom Snippets for Aurelia",
   "main": "./snippets",
