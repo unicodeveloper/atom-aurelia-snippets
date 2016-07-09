@@ -12,7 +12,7 @@ Restart Atom
 Documentation
 --------
 
--	[Aurela Snippets](https://github.com/unicodeveloper/atom-aurelia-snippets/wiki/Aurelia-Snippets)
+-	[Aurelia Snippets](https://github.com/unicodeveloper/atom-aurelia-snippets/wiki/Aurelia-Snippets)
 
 
 Development
