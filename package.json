@@ -1,0 +1,28 @@
+{
+  "name": "atom-aurelia-snippets",
+  "version": "1.0.0",
+  "description": "Atom Snippets for Aurelia",
+  "main": "./snippets",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aurelia",
+    "aurelia snippets",
+    "snippets",
+    "es6"
+  ],
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unicodeveloper/atom-aurelia-snippets.git"
+  },
+  "author": "Prosper Otemuyiwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unicodeveloper/atom-aurelia-snippets/issues"
+  },
+  "homepage": "https://github.com/unicodeveloper/atom-aurelia-snippets#readme"
+}
