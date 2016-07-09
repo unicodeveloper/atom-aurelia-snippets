@@ -57,15 +57,15 @@
 
   "Aurelia decorators: @inject":
     prefix: "_ij"
-    body: "@inject('{$1}')"
+    body: "@inject('${1}')"
 
   "Aurelia decorators: @customAttribute":
     prefix: "_ca"
-    body: "@customAttribute('{$1}')"
+    body: "@customAttribute('${1}')"
 
   "Aurelia decorators: @bindable":
     prefix: "_bd"
-    body: "@bindable('{$1}')"
+    body: "@bindable('${1}')"
 
   "Aurelia: Logging":
     prefix: '_log'
@@ -125,7 +125,7 @@
     """
 
   "Aurelia: class Skeleton":
-    prefix: "_clss"
+    prefix: "_class"
     body: """
       import { ${1} }  from 'aurelia-framework';
 
