@@ -1,4 +1,4 @@
-Atom AureliaJS Snippets ![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
+# Atom AureliaJS Snippets ![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
 
 An [Atom](https://atom.io/) snippet library for Aurelia JS framework. This library uses ES6 syntax.
 
@@ -12,7 +12,7 @@ Restart Atom
 Documentation
 --------
 
--	[AurelaSnippets](https://github.com/unicodeveloper/atom-aurelia-snippets/wiki/Aurelia-Snippets)
+-	[Aurela Snippets](https://github.com/unicodeveloper/atom-aurelia-snippets/wiki/Aurelia-Snippets)
 
 
 Development
