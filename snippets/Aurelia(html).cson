@@ -1,4 +1,4 @@
-".source.html":
+".text.html":
   "Aurelia: if binding":
     prefix: "_if"
     body: "if.bind=\"${expression}\""
