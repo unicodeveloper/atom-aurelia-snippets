@@ -123,10 +123,10 @@
        this.router = router;
      }
     """
+
   "Aurelia: class Skeleton":
     prefix: "_clss"
     body: """
-      'use strict';
       import { ${1} }  from 'aurelia-framework';
 
       export class ${2} {
