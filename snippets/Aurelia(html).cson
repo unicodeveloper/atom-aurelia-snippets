@@ -1,0 +1,152 @@
+".source.html":
+  "Aurelia: if binding":
+    prefix: "_if"
+    body: "if.bind=\"${expression}\""
+
+  "Aurelia: with binding":
+    prefix: "_with"
+    body: "with.bind=\"${expression}\""
+
+  "Aurelia: value binding":
+    prefix: "_value"
+    body: "value.bind=\"${binding}\""
+
+  "Aurelia: input binding":
+    prefix: "_input"
+    body: "input.bind=\"${binding}\""
+
+  "Aurelia: href binding":
+    prefix: "_value"
+    body: "href.bind=\"${url}\""
+
+  "Aurelia: router binding":
+    prefix: "_router"
+    body: "router.bind=\"${router}\""
+
+  "Aurelia: click triggering":
+    prefix: "_clt"
+    body: "click.trigger=\"${trigger}\""
+
+  "Aurelia: click delegate":
+    prefix: "_cld"
+    body: "click.delegate=\"${delegate}\""
+
+  "Aurelia: repeat for":
+    prefix: "_rpf"
+    body: "repeat.for=\"${item} of ${collection}\""
+
+  "Aurelia: value two way binding":
+    prefix: "_vtw"
+    body: "value.two-way=\"${binding}\""
+
+  "Aurelia: value one way binding":
+    prefix: "_vow"
+    body: "click.one-way=\"${binding}\""
+
+  "Aurelia: value one time binding":
+    prefix: "_vot"
+    body: "value.one-time=\"${binding}\""
+
+  "Aurelia: model binding":
+    prefix: "_mob"
+    body: "model.bind=\"${binding}\""
+
+  "Aurelia: model two way binding":
+    prefix: "_mtw"
+    body: "model.two-way=\"${binding}\""
+
+  "Aurelia: model one way binding":
+    prefix: "_mow"
+    body: "model.one-way=\"${binding}\""
+
+  "Aurelia: model one time binding":
+    prefix: "_mot"
+    body: "model.one-time=\"${binding}\""
+
+  "Aurelia: checked binding":
+    prefix: "_chb"
+    body: "checked.bind=\"${binding}\""
+
+  "Aurelia: innerhtml binding":
+    prefix: "_ihb"
+    body: "innerhtml.bind=\"${binding}\""
+
+  "Aurelia: textcontent binding":
+    prefix: "_tcb"
+    body: "textcontent.bind=\"${binding}\""
+
+  "Aurelia: style binding":
+    prefix: "_stb"
+    body: "style.bind=\"${binding}\""
+
+  "Aurelia: show binding":
+    prefix: "_shb"
+    body: "show.bind=\"${binding}\""
+
+  "Aurelia: view-model binding":
+    prefix: "_vmb"
+    body: "view-model.bind=\"${binding}\""
+
+  "Aurelia: compose":
+    prefix: "_cmp"
+    body: "<compose view=\"${url}\" ${view-model=\"${item}\"}></compose>"
+
+  "Aurelia: template":
+    prefix: "_tmp"
+    body: """
+      <template>
+        ${Your Template Here}
+      </template>
+    """
+
+  "Aurelia: require":
+    prefix: "_req"
+    body: "<require from=\"${url}\"></require>"
+
+  "Aurelia: bindable":
+    prefix: "_bnd"
+    body: "bindable=\"${name}\""
+
+  "Aurelia: to binding":
+    prefix: "_tob"
+    body: "to.bind=\"${binding}\""
+
+  "Aurelia: template replaceable":
+    prefix: "_trp"
+    body: """
+      <template replaceable part=\"${item}\">
+        ${Your Original Here}
+      </template>
+    """
+
+  "Aurelia: template replace part":
+    prefix: "_trpp"
+    body: """
+      <template replace-part=\"${item}\">
+        ${Your Replacement Here}
+      </template>
+    """
+
+  "Aurelia: view references":
+    prefix: "_vref"
+    body: "view.ref=\"${someIdentifier}\""
+
+  "Aurelia: view-model references":
+    prefix: "_vref"
+    body: "view-model.ref=\"${someIdentifier}\""
+
+  "Aurelia: controller references":
+    prefix: "_cref"
+    body: "controller.ref=\"${someIdentifier}\""
+
+  "Aurelia: attribute-name references":
+    prefix: "_aref"
+    body: "attribute-name.ref=\"${someIdentifier}\""
+
+  "Aurelia: element references":
+    prefix: "_eref"
+    body: "element.ref=\"${someIdentifier}\""
+
+  "Aurelia: producer.bind":
+    prefix: "_pref"
+    body: "producer.ref=\"${producerVMurl}\""
